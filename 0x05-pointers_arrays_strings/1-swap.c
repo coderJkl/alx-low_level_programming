@@ -1,12 +1,13 @@
 #include "main.h"
 /**
 * swap_int - swaps the value of two int
-* @a && @b: characters to be swapped*
+* @a:int pointer
+* @b:int pointer
 */
-	void swap_int(int *a, int *b)
+void swap_int(int *a, int *b)
 {
-	int *t = a;
-	a = b;
-	b = t;
-
+	int m = *a;
+	int n = *b;
+	*a = n;
+	*b = m;
 }
