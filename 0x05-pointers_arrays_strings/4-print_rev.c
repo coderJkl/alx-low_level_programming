@@ -1,5 +1,5 @@
 #include "main.h"
-
+#include <string.h>
 /**
  * print_rev -  prints a reversed string and a new line, to stdout
  * _strlen - counts the characters in a string
@@ -10,7 +10,7 @@ void print_rev(char *s)
 {
 	int i, k;
 
-	i = _strlen(s) - 1;
+	i = strlen(s) - 1;
 	while (i >= 0)
 	{
 		k = s[i];
