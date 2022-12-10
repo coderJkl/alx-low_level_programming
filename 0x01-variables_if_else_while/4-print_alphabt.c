@@ -12,12 +12,8 @@ int main(void)
 
 	while (i >= 'a' && i <= 'z')
 	{
-		putchar(i);
-		i++;
-	}
-	i = 'A';
-	while (i >= 'A' && i <= 'Z')
-	{
+		if (i == 'q' || i == 'e')
+			i++;
 		putchar(i);
 		i++;
 	}
