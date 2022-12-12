@@ -68,5 +68,5 @@ int main(void)
 	putchar(1 + '0');
 	putchar(9 + '0');
 	putchar('\n');
-	return (0); 
+	return (0);
 }
