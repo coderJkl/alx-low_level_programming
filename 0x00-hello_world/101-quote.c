@@ -3,6 +3,8 @@
 /**
  * main - Entry point
  *
+ * write-to-out - write to stdout
+ *
  * Return: Always 1 (Success)
  */
 int main(void)
@@ -55,15 +57,16 @@ int main(void)
 	putchar('r');
 	putchar(',');
 	putchar(' ');
-	putchar(2);
-	putchar(0);
-	putchar(1);
-	putchar(5);
+	putchar(2 + '0');
+	putchar(0 + '0');
+	putchar(1 + '0');
+	putchar(5 + '0');
 	putchar('-');
-	putchar(10);
+	putchar(1 + '0');
+	putchar(0 + '0');
 	putchar('-');
-	putchar(19);
+	putchar(1 + '0');
+	putchar(9 + '0');
 	putchar('\n');
-
-	return (1);
+	return (0); 
 }
