@@ -1,10 +1,10 @@
 #include "main.h"
 /**
- * program prints "_putchar" to stdout
+ * main - program prints "_putchar" to stdout
  *
- * putchar prints a character to the stdout
+ * _putchar - prints a character to the stdout
  *
- * main(void) returns 0 always
+ * Return: 0 always (success)
  */
 int main(void)
 {
@@ -18,5 +18,4 @@ int main(void)
 	_putchar('r');
 	_putchar('\n');
 return (0);
-
 }

@@ -1,17 +1,17 @@
 #include "main.h"
 /**
- * print_alphabet - prints lower case alphabet from a to z
+ * main - program prints the letters of the alphabet to stdout
  *
- * @i: while loop iterator
+ * _putchar - prints a character to the stdout
+ *
+ * Return: 0 always (success)
  */
-void print_alphabet(void)
+int main(void)
 {
 	int i;
-	for (i = 'a'; i <= 'z'; i++)
-	{
-		_putchar(i);
 	
-	}
-		_putchar('\n');
+	for (i = 0; i < 25; i++)
+		_putchar('a' + i);
+	_putchar('\n');
+return (0);
 }
-
