@@ -1,17 +1,19 @@
 #include "main.h"
 /**
- * main - program prints the letters of the alphabet to stdout
+ * print_alphabet - prints the letters of the alphabet to stdout
  *
  * _putchar - prints a character to the stdout
  *
  * Return: 0 always (success)
- */
-int main(void)
+*/
+void print_alphabet(void)
 {
-	int i;
-	
-	for (i = 0; i < 25; i++)
+	int i = 0;
+
+	while (i < 26)
+	{
 		_putchar('a' + i);
+		i++;
+	}
 	_putchar('\n');
-return (0);
 }
