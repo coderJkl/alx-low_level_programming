@@ -2,8 +2,8 @@
 
 /**
  * add - adds two numbers
- * @a - first operand
- * @b - 2nd operand
+ * @a: first operand
+ * @b: 2nd operand
  *
  * Return: Always 0 (On success()
  */
