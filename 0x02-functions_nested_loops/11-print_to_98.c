@@ -3,11 +3,9 @@
 /**
  * print_to_98 - prints starting from an nth term to 98
  * @n: number
- * my_putchar - prints longs
- * @n: number
+ *
  * Return: 0 always
  */
-void my_putchar(int n);
 void print_to_98(int n)
 {
 	int a;
@@ -41,6 +39,10 @@ void print_to_98(int n)
 	}
 }
 
+/**
+ * my_putchar - prints long integer
+ * @n: operand
+ */
 void my_putchar(int n)
 {
 	if (n < 0)
