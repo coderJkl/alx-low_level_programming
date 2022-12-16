@@ -1,6 +1,7 @@
 #ifndef MAIN_H
 #define MAIN_H
 
+void print_space(int n);
 void my_putchar(int n);
 int _putchar(char c);
 int _isupper(int c);
