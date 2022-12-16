@@ -1,24 +1,27 @@
 #include "main.h"
 
 /**
- * print_sqaure - prints n long sqares followed by a new line
+ * print_square - prints n long sqares followed by a new line
  * @size: sqaure width
  *
  * Return: Always 0 (on success)
  */
-
-void print_sqaure(int size)
+void print_square(int size)
 {
 	if (size > 0)
 	{
 		int i = 0;
 
-		for (; i < size; i++)
-			_putchar('#');
-		_putchar('\n');
-		for (i = 0; i < size; i++)
-			_putchar('#');
-		_putchar('\n');
+		while (i < size)
+		{
+			int x = 0;
+
+			for (; x < size; x++)
+				_putchar('#');
+			_putchar('\n');
+			i++;
+		}
+
 	}
 	else
 		_putchar('\n');
