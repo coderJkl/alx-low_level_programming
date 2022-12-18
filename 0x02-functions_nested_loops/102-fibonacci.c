@@ -16,7 +16,12 @@ int main(void)
 	printf("%ld, %ld, ", f1, f2);
 	for (i = 3; i <= 50; ++i)
 	{
-		printf("%ld, ", f);
+		printf("%ld", f);
+		if (i < 50)
+		{
+			putchar(',');
+			putchar(' ');
+		}
 		f1 = f2;
 		f2 = f;
 		f = f1 + f2;
