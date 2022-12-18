@@ -9,14 +9,14 @@ int main(void)
 {
 	int i;
 
-	int f1 = 1, f2 = 2;
+	long int f1 = 1, f2 = 2;
 
-	int f = f1 + f2;
+	long int f = f1 + f2;
 
-	printf("%d, %d, ", f1, f2);
+	printf("%ld, %ld, ", f1, f2);
 	for (i = 3; i <= 50; ++i)
 	{
-		printf("%d ", f);
+		printf("%ld, ", f);
 		f1 = f2;
 		f2 = f;
 		f = f1 + f2;
