@@ -7,20 +7,19 @@
  */
 int main(void)
 {
-	long int n;
-	int i, tmp1, tmp2;
+	int i;
 
-	i = 0;
-	n = 1;
-	while (i < 25)
+	int f1 = 1, f2 = 2;
+
+	int f = f1 + f2;
+
+	printf("%d, %d, ", f1, f2);
+	for (i = 3; i <= 50; ++i)
 	{
-		printf("%ld, ", n);
-		tmp1 = n;
-		n += tmp1;
-		printf("%ld, ", n);
-		tmp2 = n;
-		n = tmp1 + tmp2;
-		i++;
+		printf("%d ", f);
+		f1 = f2;
+		f2 = f;
+		f = f1 + f2;
 	}
 	putchar('\n');
 	return (0);
