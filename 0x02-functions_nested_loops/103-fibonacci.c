@@ -1,7 +1,6 @@
 #include <stdio.h>
-
 /**
- * main - program prints sum of the first fibonacci even numbers less than 4000000
+ * main - program prints sum of the Even fibonacci numbers less than 4000000
  *
  * Return: Always 0 (success)
  */
