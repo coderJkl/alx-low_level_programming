@@ -2,9 +2,8 @@
 #include <string.h>
 
 /**
- * _strlen - counts the characters in a string
+ * puts_half - prints half of a string
  * @str: pointer to string
- * Return: reverse strings plus new-line
  */
 
 void puts_half(char *str)
@@ -14,7 +13,7 @@ void puts_half(char *str)
 	if (i % 2 != 0)
 		i = i - 2;
 	i = i / 2;
-	while (str[i])
+	while (str[i] != '\0')
 	{
 		_putchar(str[i]);
 		i++;
