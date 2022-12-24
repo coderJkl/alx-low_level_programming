@@ -14,14 +14,26 @@ char *leet(char *s)
 	{
 		if (s[i] == 'a' || s[i] == 'A')
 			s[i] = 4 + '0';
-		if (s[i] == 'e' || s[i] == 'E')
+		while (s[i] == 'e' || s[i] == 'E')
+		{
 			s[i] = 3 + '0';
-		if (s[i] == 'o' || s[i] == 'O')
+			i++;
+		}
+		while (s[i] == 'o' || s[i] == 'O')
+		{
 			s[i] = 0 + '0';
-		if (s[i] == 't' || s[i] == 'T')
+			i++;
+		}
+		while (s[i] == 't' || s[i] == 'T')
+		{
 			s[i] = 7 + '0';
-		if (s[i] == 'l' || s[i] == 'L')
+			i++;
+		}
+		while (s[i] == 'l' || s[i] == 'L')
+		{
 			s[i] = 1 + '0';
+			i++;
+		}
 		i++;
 	}
 	return (s);
