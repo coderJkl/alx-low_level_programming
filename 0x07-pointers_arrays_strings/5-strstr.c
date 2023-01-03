@@ -19,13 +19,20 @@ char *_strstr(char *haystack, char *needle)
 		{
 			p = haystack;
 			for (c = needle; *c != '\0'; c++)
+			{
 				if (*p == *c)
 				{
 					p++;
 					count++;
 				}
-			if (*c == '\0')
-				return (p - count);
+				else
+				{
+					count = 0;
+					break;
+				}
+			}		
+				if (*c == '\0')
+					return (p - count);
 		}
 		haystack++;
 	}
