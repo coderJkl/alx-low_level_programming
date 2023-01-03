@@ -2,9 +2,9 @@
 #include <stddef.h>
 
 /**
- * _strstr - locates the first occurence in the string @s first byte of @acccept
- * @haystack: first operand
- * @needle: second operand
+ * _strstr - locates the occurence of the string acccept in string haystack
+ * @haystack: string to check
+ * @needle: string being checked for
  * Return: pointer to the first byte that matches
  */
 
@@ -24,8 +24,6 @@ char *_strstr(char *haystack, char *needle)
 					p++;
 					count++;
 				}
-				else
-					break;
 			if (*c == '\0')
 				return (p - count);
 		}
