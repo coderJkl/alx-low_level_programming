@@ -18,16 +18,18 @@ char *_strstr(char *haystack, char *needle)
 		if (*haystack == *needle)
 		{
 			p = haystack;
-			for (c = needle; c != '\0'; c++)
+			for (c = needle; *c != '\0'; c++)
 				if (*p == *c)
 				{
 					p++;
 					count++;
 				}
+				else
+					break;
 			if (*c == '\0')
 				return (p - count);
 		}
-		s++;
+		haystack++;
 	}
 	return (NULL);
 }
