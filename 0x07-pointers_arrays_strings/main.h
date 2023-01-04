@@ -2,7 +2,7 @@
 #define MAIN_H
 
 void print_space(int n);
-void my_putchar(int n);
+void my_putchar(long int n);
 
 int _putchar(char c);
 int _isupper(int c);
@@ -24,5 +24,6 @@ unsigned int _strspn(char *s, char *accept);
 char *_strpbrk(char *s, char *accept);
 char *_strstr(char *haystack, char *needle);
 void print_chessboard(char (*a)[8]);
+void print_diagsums(int *a, int size);
 
 #endif /* MAIN_H */
