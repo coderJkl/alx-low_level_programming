@@ -25,7 +25,7 @@ void print_diagsums(int *a, int size)
 
 	for (i = 0; i < size && j < size; i++)
 	{
-		count += *(a +(j * 3 + i) * size);
+		count += *(a + (j * 3 + i) * size);
 		j++;
 	}
 	my_putchar(count);
