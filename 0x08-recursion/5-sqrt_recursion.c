@@ -13,9 +13,9 @@ int _sqrt_recursion(int n)
 		return (-1);
 	if (k * k <= n && (k + 1) * (k + 1) > n)
 	{
-		if ( n % k == 0)
-			return k;
-		else 
+		if (n % k == 0)
+			return (k);
+		else
 			return (-1);
 	}
 	else
