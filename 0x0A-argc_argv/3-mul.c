@@ -17,5 +17,9 @@ int main(__attribute__((unused)) int argc,
 		printf("%d\n", atoi((argv[1])) * atoi(argv[2]));
 		return (0);
 	}
-	return (1);
+	else
+	{
+		printf("Error");
+		return (1);
+	}
 }
