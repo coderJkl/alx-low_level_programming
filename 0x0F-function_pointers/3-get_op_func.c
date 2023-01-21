@@ -5,8 +5,7 @@
 /**
   * get_op_func - select the correct function to perform the operation
   * asked by the user
-  * @s: string operand 
-  *
+  * @s: string operand
   * Return: result or 0
   */
 int (*get_op_func(char *s))(int, int)
@@ -29,5 +28,5 @@ int (*get_op_func(char *s))(int, int)
 		i++;
 	}
 
-	return ('\0');
+	return ('0');
 }
