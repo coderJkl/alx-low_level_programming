@@ -14,34 +14,18 @@ void print_numbers(const char *seperator, const unsigned int n, ...)
 	unsigned int i = 0;
 
 
-	if (seperator != NULL && n != 0)
+	if (n != 0)
 	{
 		va_start(args, n);
 
 		while (i < n)
 		{
 			printf("%d", va_arg(args, int));
-			if (i != n - 1)
-				print_string(seperator);
+			if (i != n - 1 && seperator != NULL)
+				printf("%s", seperator);
 			i++;
 		}
 		putchar('\n');
 		va_end(args);
 	}
-}
-
-/**
- * print_string - prints a string
- * @s: string to print
- */
-void print_string(const char *s)
-{
-	int x = 0;
-
-	while (s[x])
-	{
-		putchar(s[x]);
-		x++;
-	}
-	putchar(' ');
 }
