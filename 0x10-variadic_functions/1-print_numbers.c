@@ -21,11 +21,27 @@ void print_numbers(const char *seperator, const unsigned int n, ...)
 		while (i < n)
 		{
 			printf("%d", va_arg(args, int));
-			if ( i != n - 1)
-				printf("%c ", *seperator);
+			if (i != n - 1)
+				print_string(seperator);
 			i++;
 		}
 		putchar('\n');
 		va_end(args);
 	}
+}
+
+/**
+ * print_string - prints a string
+ * @s: string to print
+ */
+void print_string(const char *s)
+{
+	int x = 0;
+
+	while (s[x])
+	{
+		putchar(s[x]);
+		x++;
+	}
+	putchar(' ');
 }
