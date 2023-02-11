@@ -1,5 +1,4 @@
 #include "main.h"
-#include <string.h>
 
 /**
  * binary_to_uint - converts binary to decimal
@@ -10,7 +9,7 @@
 unsigned int binary_to_uint(const char *b)
 {
 	unsigned int num = 0, mul = 1;
-	unsigned int len = strlen(b);
+	unsigned int len = _strlen(b);
 
 	if (b == NULL)
 		return (0);
@@ -24,4 +23,20 @@ unsigned int binary_to_uint(const char *b)
 	}
 
 	return (num);
+}
+
+/**
+  * _strlen - Returns the length of a string
+  * @s: String to count
+  *
+  * Return: String length
+  */
+int _strlen(const char *s)
+{
+	int c = 0;
+
+	while (s[c])
+		c++;
+
+	return (c);
 }
