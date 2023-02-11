@@ -2,8 +2,8 @@
 #include <string.h>
 
 /**
- * binary_to_unit - converts binary to decimal
- * @b - pointer to string
+ * binary_to_uint - converts binary to decimal
+ * @b: pointer to string
  * Return: 0 or int convert
  */
 
@@ -14,7 +14,6 @@ unsigned int binary_to_uint(const char *b)
 
 	if (b == NULL)
 		return (0);
-
 	while (len--)
 	{
 		if (b[len] != '0' && b[len] != '1')
@@ -24,5 +23,5 @@ unsigned int binary_to_uint(const char *b)
 		mul *= 2;
 	}
 
-	return (num);	
+	return (num);
 }
